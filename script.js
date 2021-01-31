@@ -1,3 +1,4 @@
+//counting method
 function ticketChange(ticket, isIncrease) {
     const ticketInput = document.getElementById(ticket);
     const ticketCount= parseInt(ticketInput.value);
@@ -14,6 +15,7 @@ function ticketChange(ticket, isIncrease) {
     calculateTotal();
 }
 
+//calculating ticket price
 function calculateTotal() {
     const firstclassCount = getInputValue('firstclass');
     const economyCount = getInputValue('economy');
@@ -32,3 +34,8 @@ function getInputValue(ticket){
     const ticketCount = parseInt(ticketInput.value);
     return ticketCount;
 }
+
+//pop up
+
+// const confirmationArea = document.getElementById("confirmation");
+// confirmationArea.style.display = "block";
